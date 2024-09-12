@@ -1,0 +1,210 @@
+/* predefined css colors */
+:root{
+    --orange-color:#DA722C;
+    --dark-blue-color: #023047;
+    --dark-color: #070917;
+    --light-color: #E8F7FB;
+    --light-blue-color: #6F7DFB;
+    }
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+    }
+    /* it used to create padding and border while giving the width */
+    body{
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    .wrapper{
+        max-width: 1134px;
+      
+        margin: 0 auto ;
+    }
+    /* button styling */
+    .btn{
+      display: inline-block;
+      padding: 16px 32px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      position: relative;
+    }
+    .btn.dark{
+        background: var(--dark-blue-color);
+    }
+    .btn.light{
+      background: var(--orange-color);  
+    }
+    .btn-light .enroll-icon::before{
+        content: url(images/PencilAlt.svg);
+        position: absolute;
+        top: 50%;
+        left: 32px;
+       transform: translateX(50%);
+    }
+    .btn.enroll-icon {
+        padding-left: 30px;
+    }
+   
+    /* header part styling */
+    header{
+        background: linear-gradient(180deg , #6F7DFB 5%, #26308c) 100%;
+        height: 100vh;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 1134px;
+        top: 0;
+        padding: 36px 0;
+        z-index: 100; /* [to fix the position of value] */
+    }
+    .logo{
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+      font-size: 40px;
+      color: #fff;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        list-style: none;
+        margin: 0;
+    }
+    nav ul li a{
+        font-weight: bold;
+        font-style: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+/* hero section goes here */
+/* hero image styling */
+/* hero left styling */
+/* hero right styling */
+/* hero section styling
+
+achievement section goes here
+achievement section cards styling
+achievement card
+enrolled students
+overall rating
+bg
+rating icon */
+
+/* .achievement-cards{
+    display: none;
+} */
+/* 
+hero section styling */
+.hero-section {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 90px;
+    position: relative;
+} 
+.hero-section .left h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    margin-bottom: 0;
+}
+.hero-section .left p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 30px;
+    width: 457px;
+}
+.hero-section .left{
+    flex: 1;
+}
+
+
+.hero-section .right .img{
+    height: 572px;
+    width: 446px;
+    top: 180px;
+    left: 841px;
+   align-items: end;
+}
+
+
+
+
+/* achievement card */
+.achievement-cards{
+    position: relative;
+   min-width: 190px;
+   color: var(--dark-blue-color);
+    
+    
+}
+.achievement-cards .content{
+    border-radius: 24px;
+    background: #fff;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+}
+.achievement-cards .students-enrolled{
+    left: -223px;
+    top:323px;
+    width: 206px;
+    height: 90px;
+    
+}
+.achievement-cards .Overall-rating{
+    left: -280px;
+    top: 500px;
+    width: 34px;
+    height: 90px;
+}
+.achievement-cards .content div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.achievement-cards h3{
+    font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+.achievement-cards img{
+    flex: 1;
+  height: 42px;
+  margin-left: -24px;
+}
+.achievement-cards p{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    
+    text-align: center;
+}
+.achievement-cards .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg,#6F7DFB 0%,#3b448f 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+

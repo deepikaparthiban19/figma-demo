@@ -1,0 +1,24 @@
+STEP 1:-
+fonts
+=>poppins
+=>raleway
+
+STEP 2:-
+colors
+orange => background: #DA722C;
+background: #057ADA;
+#023047
+#070917
+#6F7DFB
+E8F7FB
+
+
+STEP 3:-
+icons and image export
+
+STEP 4:-
+exporting fonts to html documents
+
+STEP 5:- html
+step 6 - css
+step 7 - crosscheck design
